@@ -106,3 +106,39 @@ input, select, button {
   justify-content: space-between;
   border-radius: 5px;
 }
+/* Make container take full width */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Adjust form fields */
+    form input, form select, form button {
+        width: 100%;
+    }
+
+    /* Stack pie charts vertically */
+    .chart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    canvas {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Make buttons full-width */
+    button {
+        width: 100%;
+    }
+
+    /* Fix text overflow */
+    h1, h2, h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
